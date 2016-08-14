@@ -1,0 +1,1 @@
+/etc/paludis/hooks/auto_patch.bash

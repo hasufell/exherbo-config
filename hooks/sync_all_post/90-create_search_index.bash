@@ -1,0 +1,1 @@
+/etc/paludis/hooks/create_search_index.bash
