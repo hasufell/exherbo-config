@@ -131,6 +131,7 @@ if [[ "${CATEGORY}/${PN}" != "sys-devel/gcc" &&
 		"${CATEGORY}/${PN}" != "sys-devel/binutils" &&
 		"${CATEGORY}/${PN}" != "dev-lang/llvm" &&
 		"${CATEGORY}/${PN}" != "dev-lang/clang" &&
+		"${CATEGORY}/${PN}" != "media-gfx/ImageMagick" &&
 		"${CATEGORY}/${PN}" != "sys-libs/libstdc++"
 	]] ; then
 	prune_libtool_files --all
