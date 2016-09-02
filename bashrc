@@ -12,3 +12,11 @@ i686_pc_linux_gnu_LDFLAGS="-Wl,-O1 -Wl,--as-needed -Wl,--hash-style=gnu"
 
 [[ -e /etc/paludis/hooks/setup_pkg_env.bash ]] && . /etc/paludis/hooks/setup_pkg_env.bash
 
+
+case "${CATEGORY}/${PN}" in
+    x11-wm/i3)
+        scm_user_customize () {
+            SCM_REPOSITORY="https://github.com/hasufell/i3wm.git"
+        }
+        ;;
+esac
