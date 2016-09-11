@@ -10,7 +10,7 @@
 source ${PALUDIS_EBUILD_DIR}/echo_functions.bash
 
 declare -r CONFIG_FILE="/etc/paludis/hooks/configs/auto_patch.conf"
-PATCH_DIR="/var/db/paludis/autopatches"
+PATCH_DIR="/etc/paludis/autopatches"
 # Configuration override
 [[ -f ${CONFIG_FILE} ]] && source ${CONFIG_FILE}
 
