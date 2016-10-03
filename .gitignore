@@ -1,1 +1,21 @@
 tmp/cave-search-index
+
+# don't include repos by default...
+repositories/*.conf
+
+# except for default ones in the stages...
+!repositories/accounts.conf
+!repositories/installed.conf
+!repositories/unavailable.conf
+!repositories/arbor.conf
+!repositories/installed_accounts.conf
+!repositories/unpackaged.conf
+!repositories/graveyard.conf
+!repositories/repository.conf
+!repositories/unwritten.conf
+!repositories/i686-pc-linux-gnu.conf
+!repositories/unavailable-unofficial.conf
+
+# ...and our custom ones
+!repositories/hasufell-binhost
+
