@@ -23,3 +23,6 @@ case "${CATEGORY}/${PN}" in
 		EXTRA_WGET="--no-check-certificate"
 		;;
 esac
+
+# idiotic mysql package dies in pkg_pretend otherwise
+MYSQL_MAJOR_UPGRADE="YesPlease"
