@@ -19,4 +19,7 @@ case "${CATEGORY}/${PN}" in
             SCM_REPOSITORY="https://github.com/hasufell/i3wm.git"
         }
         ;;
+	games-fps/urbanterror)
+		EXTRA_WGET="--no-check-certificate"
+		;;
 esac
