@@ -132,7 +132,8 @@ if [[ "${CATEGORY}/${PN}" != "sys-devel/gcc" &&
 		"${CATEGORY}/${PN}" != "dev-lang/llvm" &&
 		"${CATEGORY}/${PN}" != "dev-lang/clang" &&
 		"${CATEGORY}/${PN}" != "media-gfx/ImageMagick" &&
-		"${CATEGORY}/${PN}" != "sys-libs/libstdc++"
+		"${CATEGORY}/${PN}" != "sys-libs/libstdc++" &&
+		"${CATEGORY}/${PN}" != "app-text/opensp"
 	]] ; then
 	prune_libtool_files --all
 fi
