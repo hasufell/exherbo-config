@@ -14,7 +14,7 @@ if [[ ${CAVE_PERFORM_CMDLINE_destination} == ${reponame} ]] ; then
 	    $(for pkg in "${repo}/packages/${CATEGORY}/${PN}/"*".pbin-1+exheres-0" ; do . "${pkg}" ; basename "${BINARY_URI}" ; done)
 	)
 
-	for file in "${bins}"/${reponame}--${CATEGORY}--${PN}-*.tar.bz2 ; do
+	for file in "${bins}"/${reponame}--${CATEGORY}--${PN}-[0-9]*.tar.bz2 "${bins}"/${reponame}--${CATEGORY}--${PN}-scm-*.tar.bz2; do
 	    file=${file##*/}
 	    if ! echo "${good_files[@]}" | grep -q "${file}" ; then
 		rm -vf "${bins}/${file}"
