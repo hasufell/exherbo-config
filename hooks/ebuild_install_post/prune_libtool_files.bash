@@ -133,7 +133,9 @@ if [[ "${CATEGORY}/${PN}" != "sys-devel/gcc" &&
 		"${CATEGORY}/${PN}" != "dev-lang/clang" &&
 		"${CATEGORY}/${PN}" != "media-gfx/ImageMagick" &&
 		"${CATEGORY}/${PN}" != "sys-libs/libstdc++" &&
-		"${CATEGORY}/${PN}" != "app-text/opensp"
+		"${CATEGORY}/${PN}" != "app-text/opensp" &&
+		"${CATEGORY}/${PN}" != "x11-libs/graphite2" &&
+		"${CATEGORY}/${PN}" != "dev-libs/expat"
 	]] ; then
 	prune_libtool_files --all
 fi
