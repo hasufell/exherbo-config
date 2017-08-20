@@ -135,6 +135,8 @@ if [[ "${CATEGORY}/${PN}" != "sys-devel/gcc" &&
 		"${CATEGORY}/${PN}" != "sys-libs/libstdc++" &&
 		"${CATEGORY}/${PN}" != "app-text/opensp" &&
 		"${CATEGORY}/${PN}" != "x11-libs/graphite2" &&
+		"${CATEGORY}/${PN}" != "media-libs/freetype" &&
+		"${CATEGORY}/${PN}" != "sys-apps/dbus" &&
 		"${CATEGORY}/${PN}" != "dev-libs/expat"
 	]] ; then
 	prune_libtool_files --all
